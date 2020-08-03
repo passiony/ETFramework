@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6951743adb93844fcb5ddf53e02547c9, type: 3}
+  m_Name: Manifest
+  m_EditorClassIdentifier: 
+  appVersion: 0.0.1
+  resVersion: 0.0.1
+  runMode: 1
+  channelName: Develop
+  downloadURL: http://127.0.0.1:7888/
+  activeVariants: []
+  bundles:
+  - atlas/comm.assetbundle
+  - code.assetbundle
+  - config.assetbundle
+  - manifest
+  - ui/common.assetbundle
+  - ui/uilobby.assetbundle
+  - ui/uilogin.assetbundle
+  - unit.assetbundle
+  dirs:
+  - Assets\Bundles\Atlas\Comm
+  - Assets\Bundles\Code
+  - Assets\Bundles\Config\Books
+  - Assets\Bundles\Config
+  - Assets\Bundles
+  - Assets\Bundles\UI\Common
+  - Assets\Bundles\UI\UILobby
+  - Assets\Bundles\UI\UILogin
+  - Assets\Bundles\Unit
+  assets:
+  - bundle: 0
+    dir: 0
+    name: loading_01.png
+  - bundle: 1
+    dir: 1
+    name: Hotfix.dll.bytes
+  - bundle: 1
+    dir: 1
+    name: Hotfix.pdb.bytes
+  - bundle: 2
+    dir: 2
+    name: Hamlet.json
+  - bundle: 2
+    dir: 3
+    name: BuffConfig.txt
+  - bundle: 2
+    dir: 3
+    name: GlobalProto.txt
+  - bundle: 2
+    dir: 3
+    name: UnitConfig.txt
+  - bundle: 3
+    dir: 4
+    name: Manifest.asset
+  - bundle: 4
+    dir: 5
+    name: UILaunch.prefab
+  - bundle: 4
+    dir: 5
+    name: UINoticeTip.prefab
+  - bundle: 5
+    dir: 6
+    name: UILobby.prefab
+  - bundle: 6
+    dir: 7
+    name: UILogin.prefab
+  - bundle: 7
+    dir: 8
+    name: Skeleton.prefab
+  - bundle: 7
+    dir: 8
+    name: Unit.prefab
