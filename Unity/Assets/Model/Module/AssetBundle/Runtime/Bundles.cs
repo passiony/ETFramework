@@ -237,17 +237,26 @@ namespace XAsset
                     }
                 }
 
+                // for (int i = 0; i < _loading.Count; i++)
+                // {
+                //     var item = _loading[i];
+                //     if (item.Update())
+                //         continue;
+                //     
+                //     if (item.loadState == LoadState.Loaded || item.loadState == LoadState.Unload)
+                //     {
+                //         _loading.RemoveAt(i);
+                //         i--;
+                //     }
+                // }
                 for (int i = 0; i < _loading.Count; i++)
                 {
                     var item = _loading[i];
                     if (item.Update())
                         continue;
                     
-                    if (item.loadState == LoadState.Loaded || item.loadState == LoadState.Unload)
-                    {
-                        _loading.RemoveAt(i);
-                        i--;
-                    }
+                    _loading.RemoveAt(i);
+                    i--;
                 }
             }
             

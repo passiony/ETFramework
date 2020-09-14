@@ -282,19 +282,29 @@ namespace ETModel
 
         public void Update()
         {
+            // for (var i = 0; i < _loadingAssets.Count; i++)
+            // {
+            //     var item = _loadingAssets[i];
+            //     if (item.loadState == LoadState.Loaded || item.loadState == LoadState.Unload || item.error != null)
+            //     {
+            //         _loadingAssets.RemoveAt(i);
+            //         i--;
+            //         continue;
+            //     }
+            //
+            //     item.Update();
+            // }
+
             for (var i = 0; i < _loadingAssets.Count; i++)
             {
                 var item = _loadingAssets[i];
-                if (item.loadState == LoadState.Loaded || item.loadState == LoadState.Unload || item.error != null)
-                {
-                    _loadingAssets.RemoveAt(i);
-                    i--;
+                if (item.Update())
                     continue;
-                }
-
-                item.Update();
+                
+                _loadingAssets.RemoveAt(i);
+                i--;
             }
-
+            
             for (var i = 0; i < _unusedAssets.Count; i++)
             {
                 var item = _unusedAssets[i];
